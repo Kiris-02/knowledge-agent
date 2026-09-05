@@ -1,0 +1,28 @@
+﻿# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Environment & Secrets
+.env
+.env.local
+
+# Storage & Databases
+data/chroma_db/
+data/indexed_books.json
+!data/.gitkeep
+books/*
+!books/.gitkeep
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
