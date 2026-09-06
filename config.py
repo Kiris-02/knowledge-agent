@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 env_books_dir = os.getenv("BOOKS_DIR")
 if env_books_dir and Path(env_books_dir).exists():
     BOOKS_DIR = Path(env_books_dir)
+elif Path(r"d:\BÌnh\Sách Báo Chí").exists():
+    BOOKS_DIR = Path(r"d:\BÌnh\Sách Báo Chí")
 elif (BASE_DIR.parent / "(khonglao)-nho-giao-tran-trong-kim-dantocking.com.pdf").exists():
-    # Local development with Sách Báo Chí parent directory
     BOOKS_DIR = BASE_DIR.parent
 else:
     BOOKS_DIR = BASE_DIR / "books"
